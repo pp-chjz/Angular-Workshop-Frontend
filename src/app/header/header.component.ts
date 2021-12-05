@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
+  demoMailNoti = 50;
+  demoNoti = 9;
+
   constructor() { }
 
   ngOnInit(): void {
