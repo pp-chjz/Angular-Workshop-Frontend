@@ -14,4 +14,8 @@ export class AppComponent {
   setName(){
     this.name = 'PP';
   }
+
+  onSayHi(text: String){
+    // alert(text)
+  }
 }
