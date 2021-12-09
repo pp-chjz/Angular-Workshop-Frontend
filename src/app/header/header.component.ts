@@ -7,8 +7,11 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
   
+  //Input คือรับมาจาก Component แม่มาใช้
   @Input("media_Query") mobileQueryMax!: boolean;
 
+
+  //OUTPUT ไว้ให้component แม่ ใช้
   @Output("toggle") navToggle = new EventEmitter(); //ตั้งชื่อได้ในวงเล็บหลัง output
   @Output() sayHi = new EventEmitter<String>(); //กำหนด type ของตัวแปลงที่จะส่งไปได้ใน < >
 
