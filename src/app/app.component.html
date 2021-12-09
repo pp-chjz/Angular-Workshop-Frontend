@@ -6,6 +6,6 @@
         <button mat-button>click</button>
     </mat-sidenav>
     <mat-sidenav-content>
-        <app-header (toggle)="sidenav.toggle()" (sayHi)="onSayHi($event)"></app-header> <!--$event คือรับมา-->
+        <app-header [media_Query]="mobileQueryMax.matches" (toggle)="sidenav.toggle()" (sayHi)="onSayHi($event)"></app-header> <!--$event คือรับมา--> <!--[] เป็นการรับ input ส่งให้ลูก-->
     </mat-sidenav-content>
 </mat-sidenav-container>

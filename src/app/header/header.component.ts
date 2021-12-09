@@ -1,4 +1,4 @@
-import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -6,6 +6,8 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
+  
+  @Input("media_Query") mobileQueryMax!: boolean;
 
   @Output("toggle") navToggle = new EventEmitter(); //ตั้งชื่อได้ในวงเล็บหลัง output
   @Output() sayHi = new EventEmitter<String>(); //กำหนด type ของตัวแปลงที่จะส่งไปได้ใน < >
