@@ -1,1 +1,11 @@
-<app-header></app-header>
+
+
+<mat-sidenav-container class="example-container">
+    <mat-sidenav #sidenav mode="side" opened>
+        <button mat-button>click</button>
+        <button mat-button>click</button>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <app-header (toggle)="sidenav.toggle()" (sayHi)="onSayHi($event)"></app-header> <!--$event คือรับมา-->
+    </mat-sidenav-content>
+</mat-sidenav-container>
