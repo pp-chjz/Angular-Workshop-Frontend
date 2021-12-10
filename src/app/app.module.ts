@@ -14,9 +14,12 @@ import { MatMenuModule } from '@angular/material/menu';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { SideNavComponent } from './side-nav/side-nav.component';
 import { MatListModule } from '@angular/material/list';
+import { StockHomeComponent } from './stock/stock-home/stock-home.component';
+import { StockCreateComponent } from './stock/stock-create/stock-create.component';
+import { StockEditComponent } from './stock/stock-edit/stock-edit.component';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, SideNavComponent],
+  declarations: [AppComponent, HeaderComponent, SideNavComponent, StockHomeComponent, StockCreateComponent, StockEditComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
