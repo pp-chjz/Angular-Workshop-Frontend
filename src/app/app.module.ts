@@ -17,9 +17,17 @@ import { MatListModule } from '@angular/material/list';
 import { StockHomeComponent } from './stock/stock-home/stock-home.component';
 import { StockCreateComponent } from './stock/stock-create/stock-create.component';
 import { StockEditComponent } from './stock/stock-edit/stock-edit.component';
+import { MatCardModule } from '@angular/material/card';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, SideNavComponent, StockHomeComponent, StockCreateComponent, StockEditComponent],
+  declarations: [
+    AppComponent,
+    HeaderComponent,
+    SideNavComponent,
+    StockHomeComponent,
+    StockCreateComponent,
+    StockEditComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -31,6 +39,7 @@ import { StockEditComponent } from './stock/stock-edit/stock-edit.component';
     MatMenuModule,
     MatSidenavModule,
     MatListModule,
+    MatCardModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

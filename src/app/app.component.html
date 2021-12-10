@@ -6,6 +6,9 @@
     </mat-sidenav>
     <mat-sidenav-content>
         <app-header [media_Query]="mobileQueryMax.matches" (toggle)="sidenav.toggle()" (sayHi)="onSayHi($event)"></app-header> <!--$event คือรับมา--> <!--[] เป็นการรับ input ส่งให้ลูก-->
-        <router-outlet></router-outlet> <!-- ขึ้นอยู่กับ route ถ้าเลือก stock/create มันก็จะโชว์ component ที่่เราระบุไว้-->
+        <div class="content-wrapper">
+            <router-outlet></router-outlet> <!-- ขึ้นอยู่กับ route ถ้าเลือก stock/create มันก็จะโชว์ component ที่่เราระบุไว้-->
+
+        </div>
     </mat-sidenav-content>
 </mat-sidenav-container>
