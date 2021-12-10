@@ -1,9 +1,8 @@
 
 
-<mat-sidenav-container class="example-container">
+<mat-sidenav-container fullscreen>
     <mat-sidenav #sidenav mode="side" [opened]="mobileQueryMax.matches ? false: true">
-        <button mat-button>click</button>
-        <button mat-button>click</button>
+        <app-side-nav></app-side-nav>
     </mat-sidenav>
     <mat-sidenav-content>
         <app-header [media_Query]="mobileQueryMax.matches" (toggle)="sidenav.toggle()" (sayHi)="onSayHi($event)"></app-header> <!--$event คือรับมา--> <!--[] เป็นการรับ input ส่งให้ลูก-->
