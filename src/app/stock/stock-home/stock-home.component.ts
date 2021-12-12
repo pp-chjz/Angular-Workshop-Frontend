@@ -22,35 +22,35 @@ export class StockHomeComponent implements OnInit {
   feedData(){
     const dummy: Product[] = [
       {
-        name:'mac book',
+        name:"Non nemo officiis atque ratione.", //press F1 and choose faker
         stock: 1,
         price: 2000,
         image: "https://static.independent.co.uk/2021/06/16/08/newFile-4.jpg?width=982&height=726&auto=webp&quality=75"
   
       },
       {
-        name:'mac book',
+        name:"Voluptate iusto et et quis laboriosam odit nulla sint veniam fd",
         stock: 222222222,
         price: 2000,
         image: "https://static.independent.co.uk/2021/06/16/08/newFile-4.jpg?width=982&height=726&auto=webp&quality=75"
   
       },
       {
-        name:'mac book',
+        name:"Aut facere placeat recusandae omnis.",
         stock: 3542524,
         price: 2000,
         image: "https://static.independent.co.uk/2021/06/16/08/newFile-4.jpg?width=982&height=726&auto=webp&quality=75"
   
       },
       {
-        name:'mac book',
+        name:"Dolores voluptas qui aliquid aliquid dicta inventore quis incidunt a.",
         stock: 441253,
         price: 2000,
         image: "https://static.independent.co.uk/2021/06/16/08/newFile-4.jpg?width=982&height=726&auto=webp&quality=75"
   
       },
       {
-        name:'mac book',
+        name:"Officia voluptas ipsam dolores voluptate voluptate molestiae.",
         stock: 5,
         price: 2000,
         image: "https://static.independent.co.uk/2021/06/16/08/newFile-4.jpg?width=982&height=726&auto=webp&quality=75"
